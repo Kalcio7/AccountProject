@@ -15,6 +15,7 @@ public class Account {
         private double balance;
         private double interestRate=0.23;
         private String user;
+        private double newBalance;
  
      /**constructor that takes the initial balance
       * @param initialBalance 
@@ -62,6 +63,11 @@ public class Account {
      */
     public String getUser() {
         return user;
+    }
+    
+    public double getNewBalance(){
+        newBalance = this.balance * this.interestRate;
+        return newBalance;
     }
     
     

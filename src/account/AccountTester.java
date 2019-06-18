@@ -18,6 +18,7 @@ public class AccountTester {
         
         System.out.println("Please enter the amount by which you want to open an account:");
         
+        
         Scanner sc=new Scanner(System.in);
         double bal=sc.nextDouble();
         
@@ -30,5 +31,7 @@ public class AccountTester {
              
         System.out.println("The balance is: "+a.getBalance());  
         System.out.println("The InterestRate per month is "+a.getInterestRate());
+        System.out.println("The new Balance with interest rate include is: " 
+                + a.getNewBalance());
     }
 }
